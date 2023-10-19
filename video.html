@@ -18,35 +18,64 @@
             </svg>
          </a>
 
-         <a href="/favorite.html" class="header-link header__link_favorite">Избранное</a>
+         <a href="/favorite.html" class="header-link header__link_favorite">
+            <span>Избранное</span>
+            
+            <svg class="header__icon">
+               <use xlink:href="image/sprite.svg#star-ob"></use>
+            </svg>
+         </a>
       </div>
    </header>
 
    <main>
-
       <section class="search">
          <div class="container">
             <form class="search__form">
-               <label class="search__label">
-                  <input type="search" class="search__text">
-                  <button class="search__btn" type="submit">поиск</button>
-               </label>
+               <input type="search" class="search__text">
+               <button class="search__btn" type="submit">
+                  <span>поиск</span>
+                  <svg class="search__icon"">
+                        <use xlink:href=" /image/sprite.svg#search"></use>
+                  </svg>
+               </button>
             </form>
          </div>
       </section>
 
       <section class="video">
          <div class="container">
-            <iframe class="video__iframe" src="" frameborder="0"></iframe>
-            <h2 class="video__title">Философия Идущего к реке</h2>
-            <p class="video-card__channel">Правое полушарие интроверта</p>
-            <div class="video__viewer">
-               <p class="video__data">1 575 581 просмотр Дата премьеры: 16 авг. 2024 </p>
-               <p class="video__desc">Смотрите наш курс-саммари «Как понимать философию» фоном.</p>
+            <div class="video__player">
+               <iframe class="video__iframe" src="https://www.youtube.com/embed/Ot1dBokdPFw?si=Nzb5bXIa17ziQxeX" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen"></iframe>
             </div>
-            <a class="video__favorites" href="#">В избранном</a>
+            
+            <div class="video__container">
+               <div class="video__content">
+               <h2 class="video__title">Философия Идущего к реке</h2>
+               
+               <p class="video__channel">Правое полушарие интроверта</p>
+   
+               <p class="video__info">
+                  <span class="video__views">1 575 581 просмотр</span>
+                  <span class="video__date">Дата премьеры: 16 авг. 2024 г.</span>
+               </p>
+               
+               <p class="video__description">
+                  Смотрите наш курс-саммари «Как понимать философию» фоном.
+               </p>
+            </div>
+            <button href="/favorite.html" class="video-link video__link_active">
+               <span class="video__no-favorite">Избранное</span>
+               <span class="video__favorite">В избранном</span>
+               
+               <svg class="video__icon">
+                  <use xlink:href="image/sprite.svg#star-ob"></use>
+               </svg>
+            </button>
+            </div>
          </div>
       </section>
+
 
       <section class="video-list">
          <div class="container">
@@ -65,7 +94,13 @@
 
                         <p class="video-card__duration">31 мин 25 сек</p>
                      </a>
-                     <button class="video-card__favorite" type="button"></button>
+                     <button class="video-card__favorite" type="button"
+                        area-label="Добавить в избранное, Философия идущего к реке">
+                        <svg class="search__icon"">
+                           <use class=" star-o" xlink:href="/image/sprite.svg#star-ob"></use>
+                           <use class="star" xlink:href="/image/sprite.svg#star"></use>
+                        </svg>
+                     </button>
                   </article>
                </li>
                <li class="video-list__item">
@@ -80,9 +115,60 @@
 
                         <p class="video-card__duration">31 мин 25 сек</p>
                      </a>
-                     <button class="video-card__favorite" type="button"></button>
+                     <button class="video-card__favorite" type="button"
+                        area-label="Добавить в избранное, Философия идущего к реке">
+                        <svg class="search__icon"">
+                           <use class=" star-o" xlink:href="/image/sprite.svg#star-ob"></use>
+                           <use class="star" xlink:href="/image/sprite.svg#star"></use>
+                        </svg>
+                     </button>
                   </article>
                </li>
+
+               <li class="video-list__item">
+                  <article class="video-card">
+                     <a href="#" class="video-card__link">
+                        <img src="/image/image-2.jpg" alt="Превью Философия идущего к реке"
+                           class="video-card__thumbnail">
+
+                        <h3 class="video-card__title">Как выжить в Средние века?</h3>
+
+                        <p class="video-card__channel">Правое полушарие интроверта</p>
+
+                        <p class="video-card__duration">31 мин 25 сек</p>
+                     </a>
+                     <button class="video-card__favorite" type="button"
+                        area-label="Добавить в избранное, Философия идущего к реке">
+                        <svg class="search__icon"">
+                           <use class=" star-o" xlink:href="/image/sprite.svg#star-ob"></use>
+                           <use class="star" xlink:href="/image/sprite.svg#star"></use>
+                        </svg>
+                     </button>
+                  </article>
+               </li>
+
+               <li class="video-list__item">
+                  <article class="video-card">
+                     <a href="#" class="video-card__link">
+                        <img src="/image/image-2.jpg" alt="Превью Философия идущего к реке"
+                           class="video-card__thumbnail">
+
+                        <h3 class="video-card__title">Как выжить в Средние века?</h3>
+
+                        <p class="video-card__channel">Правое полушарие интроверта</p>
+
+                        <p class="video-card__duration">31 мин 25 сек</p>
+                     </a>
+                     <button class="video-card__favorite" type="button"
+                        area-label="Добавить в избранное, Философия идущего к реке">
+                        <svg class="search__icon"">
+                           <use class=" star-o" xlink:href="/image/sprite.svg#star-ob"></use>
+                           <use class="star" xlink:href="/image/sprite.svg#star"></use>
+                        </svg>
+                     </button>
+                  </article>
+               </li>
+
             </ul>
          </div>
       </section>
@@ -90,22 +176,24 @@
 
    <footer class="footer">
       <div class="container footer__container">
-         <a class="footer__link " href="image/sprite.svg#logo-white">
+         <a class="footer__link " href="/">
             <svg class="footer__logo" viewBox="0 0 360 48" role="img" aria-label="Логотип сервиса You-Tvideo">
-               <use xlink:href=""></use>
+               <use xlink:href="/image/sprite.svg#logo-white"></use>
             </svg>
          </a>
 
-            <ul class="footer__developers">
-               <li class="footer__developees-item">
-                  Designer: <a class="footer__developers-link" href="https://t.me" target="_blank" rel="noopener">Anastasia Ilina</a>
-               </li>
-               <li class="footer__developees-item">
-                  Developer: <a class="footer__developers-link" href="https://t.me/taurin_n" target="_blank" rel="noopener">Andrey Holodov</a>
-               </li>
-            </ul>
+         <ul class="footer__developers">
+            <li class="footer__developees-item">
+               Designer: <a class="footer__developers-link" href="https://t.me" target="_blank" rel="noopener">Anastasia
+                  Ilina</a>
+            </li>
+            <li class="footer__developees-item">
+               Developer: <a class="footer__developers-link" href="https://t.me/taurin_n" target="_blank"
+                  rel="noopener">Andrey Holodov</a>
+            </li>
+         </ul>
 
-            <p class="footer__copyright">© You-Tvideo, 2023 </p>
+         <p class="footer__copyright">© You-Tvideo, 2023 </p>
       </div>
    </footer>
 </body>
